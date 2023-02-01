@@ -28,6 +28,9 @@ const getCredentials = async () => {
     accessKey = credentials.accessKeyId;
     secretKey = credentials.secretAccessKey;
     token = credentials.sessionToken;
+    console.log(accessKey);
+    console.log(secretKey);
+    console.log(token);
   } catch (e) {
     console.error("No master credentials available", e);
   }
